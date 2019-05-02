@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default () =>{
+export default () => {
     return (
         <div>
-            welcome to our homepage
+            welcome to payroll homepage!
         </div>
     );
 };
