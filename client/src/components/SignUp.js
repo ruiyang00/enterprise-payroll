@@ -54,7 +54,7 @@ class SignUp extends Component {
 
                     {this.props.errorMessage ?
                         <div className="alert alert-danger">
-                            {a()}
+                            {this.props.errorMessage}
                         </div> : null}
 
                     <button type="submit" className="btn btn-outline-primary">Sign Up</button>
