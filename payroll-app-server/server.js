@@ -1,9 +1,13 @@
 var express = require('express');
 var morgan = require('morgan');
-var app = express();
+const cors = require('cors');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 const dotenv = require('dotenv');
+
+
+var app = express();
+app.use(cors());
 //load the .env file
 dotenv.config();
 var url = process.env.MONGO_DB_ENDPOINT;
@@ -32,5 +36,5 @@ app.get('/', function (request, response) {
 
 //starts the server
 app.listen(process.env.SERVER_PORT, function () {
-    console.log("Server listening at port 3000,MovedIn api created");
+    console.log("Server listening at port 5000,MovedIn api created");
 });
